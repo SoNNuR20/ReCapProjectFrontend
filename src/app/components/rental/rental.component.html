@@ -1,0 +1,18 @@
+<table class="table"><thead>
+    <h5>Kiralama</h5>
+    <tr>
+      <th scope="col">Kiralayan Kişi</th>
+      <th scope="col">Marka</th>
+      <th scope="col">Kiralama Tarihi</th>
+      <th scope="col">Teslim Tarihi</th>
+      <th scope="col">Kiralama Ücreti</th>
+    </tr>
+  </thead><tbody>  <tr *ngFor="let rental of rentals">
+    <td>{{rental.customerFirstName}} {{rental.customerLastName}}</td>
+    <td>{{rental.brandName}}</td>
+    <td>{{rental.rentDate}}</td>
+    <td>{{rental.returnDate}}</td>
+  </tr>
+  </tbody>
+  
+  </table>
